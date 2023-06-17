@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 // General Styles
 * {
   margin: 0;
@@ -6,15 +8,15 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
   line-height: 1.5;
 
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
-  --border-color: #ff9a0045;
-  --text-decoration-color: #ff9a00;
+  --border-color: rgba(0, 0, 0, 0.2);
+  --text-decoration-color: rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -35,6 +37,10 @@ body {
   justify-content: space-between;
 }
 
+.center {
+  text-align: center;
+}
+
 .resume {
   margin: 50px auto;
   border: 1px solid #f5f5f5;
@@ -44,7 +50,7 @@ body {
 }
 
 .resume__block {
-  border-bottom: 3px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
   padding-bottom: 30px;
   margin-bottom: 15px;
 }
@@ -89,7 +95,7 @@ body {
 .contact-info__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .contact-info__block--center {
@@ -124,12 +130,12 @@ body {
 }
 
 .contact-info__avatar {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  border-radius: 5%;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border: 3px solid;
   border-color: var(--text-decoration-color);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 // Intro and skills styles
