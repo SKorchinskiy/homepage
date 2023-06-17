@@ -222,7 +222,7 @@ body {
 }
 
 .additional-info {
-  flex: 1 1 40%;
+  flex: 0.5;
 }
 
 .additional-info__education {
