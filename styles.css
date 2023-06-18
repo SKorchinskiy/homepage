@@ -55,6 +55,10 @@ body {
   margin-bottom: 15px;
 }
 
+.main-info {
+  display: flex;
+}
+
 @media screen and (max-width: 576px) {
   .main-info,
   .contact_info_container {
@@ -177,15 +181,26 @@ body {
   text-align: justify;
 }
 
+.fa-icons__technologies {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-icons__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 // Experience and additional info styles
 .experiences {
-  flex: 1 1 60%;
+  flex: 1 1;
   margin-right: 50px;
 }
 
 .experiences__header {
   color: var(--secondary-text-color);
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -200,6 +215,7 @@ body {
   color: var(--primary-text-color);
   text-decoration-color: var(--text-decoration-color);
   text-decoration-line: underline;
+  letter-spacing: 2px;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -228,7 +244,8 @@ body {
 }
 
 .additional-info {
-  flex: 0.5;
+  flex: 1;
+  margin-left: 40px;
 }
 
 .additional-info__education {
@@ -237,8 +254,12 @@ body {
 
 .additional-info__education-header {
   color: var(--secondary-text-color);
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
+}
+
+.additional-info__education-university {
+  display: flex;
 }
 
 .additional-info__education-university-durability {
@@ -250,12 +271,21 @@ body {
 
 .additional-info__education-university-speciality {
   color: var(--primary-text-color);
-  text-align: left;
+  text-align: center;
   margin-bottom: 10px;
 }
 
 .additional-info__education-university-name {
   color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.additional-details__education-university {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
 }
 
 .additional-info__languages {
@@ -264,10 +294,12 @@ body {
 
 .additional-info__languages-header {
   color: var(--secondary-text-color);
-  text-align: left;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .additional-info__languages-item {
+  text-align: left;
+  margin-left: 50px;
   color: var(--secondary-text-color);
 }
